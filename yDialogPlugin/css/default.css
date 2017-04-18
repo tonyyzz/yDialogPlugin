@@ -1,0 +1,127 @@
+﻿/*遮罩*/
+.yDialogPlugin_shadow {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-align: center;
+	display: none;
+	z-index: 20000;
+}
+
+	/*盒子*/
+	.yDialogPlugin_shadow .yDlgBox {
+		width: 340px;
+		background-color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -120px; /*要计算总宽高 除以2*/
+		margin-left: -170px;
+		border-radius: 10px;
+		padding: 10px 0;
+		box-shadow: 0 2px 8px #000;
+		zoom: 0.85; /*默认缩放比例*/
+	}
+
+		/*加载动画*/
+		.yDialogPlugin_shadow .yDlgBox .yDlgLoading {
+			width: 100%;
+			height: 130px;
+			background-color: #fff;
+			background-image: url(../images/loading.gif);
+			background-position: 50% 32%;
+			background-repeat: no-repeat;
+			line-height: 200px;
+			font-size: 1.2em;
+		}
+
+		/*提示信息*/
+		.yDialogPlugin_shadow .yDlgBox .yDlgTips {
+			width: 100%;
+			padding: 36px 10px;
+			box-sizing: border-box;
+			line-height: 26px;
+			font-size: 16px;
+			background-color: #fff;
+		}
+
+		/*按钮组*/
+		.yDialogPlugin_shadow .yDlgBox .yDlgButtons {
+			width: 100%;
+			padding-top: 10px;
+			border-top: 10px solid #ccc;
+			background-color: #fff;
+		}
+
+			/*按钮公共样式*/
+			.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgBtnA {
+				display: inline-block;
+				width: 39%;
+				height: 40px;
+				margin: 0 5%;
+				background-color: #888;
+				color: #fff;
+				line-height: 40px;
+				border-radius: 5px;
+				text-decoration: none;
+				box-sizing: border-box;
+				border: 1px solid transparent;
+				/*transition:all .2s;*/
+			}
+
+			/*信息提示框的按钮*/
+			.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgOk {
+				background-color: #428BCA;
+				border: 1px solid #357EBD;
+			}
+
+				.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgOk:hover {
+					background-color: #3071A9;
+					border: 1px solid #285E8E;
+				}
+			/*成功消息提示框的按钮*/
+			.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgSuccess {
+				background-color: #5CB85C;
+				border: 1px solid #4CAE4C;
+			}
+
+				.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgSuccess:hover {
+					background-color: #449D44;
+					border: 1px solid #398439;
+				}
+			/*警告框的按钮*/
+			.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgWarn {
+				background-color: #F0AD4E;
+				border: 1px solid #EEA236;
+			}
+
+				.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgWarn:hover {
+					background-color: #EC971F;
+					border: 1px solid #D58512;
+				}
+			/*取消按钮*/
+			.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgCancel {
+				background-color: #fff;
+				color: #333;
+				border: 1px solid #ccc;
+			}
+
+				.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgCancel:hover {
+					background-color: #E6E6E6;
+					color: #333;
+					border: 1px solid #ADADAD;
+				}
+			/*删除按钮*/
+			.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgDelete {
+				background-color: #D9534F;
+				border: 1px solid #D43F3A;
+			}
+
+				.yDialogPlugin_shadow .yDlgBox .yDlgButtons .yDlgDelete:hover {
+					background-color: #C9302C;
+					border: 1px solid #AC2925;
+				}
